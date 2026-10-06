@@ -13,7 +13,6 @@ Tahir Onur Ozkoral - 041122154
 
 ## Deployment Note
 I couldn't use Azure Static Web Apps because my Azure for Students account was blocked by the new region policy. Since the professor allowed the VM option, I deployed the `store-front` on a VM instead.
-
 The `order-service` and Python version of `product-service` were deployed with Azure App Service. RabbitMQ was deployed on its own VM.
 
 ## Reflection Questions
@@ -26,3 +25,5 @@ Locally, I had to start the services myself and use localhost. On Azure App Serv
 
 ### 3. Why is it important to use environment variables for configurations in a cloud environment?
 Environment variables make it easier to change settings without changing the code every time. Things like URLs, ports, and passwords can be different depending on where the app is running, so it is better than hardcoding them directly in the code.
+
+Also, in my previous positions, there were many times where this allowed another available developer to quickly change a variable and fix someone else's project by following some basic instructions, especially when another team needed a quick change outside normal work hours. So I have also seen their usefulness firsthand in actual work.
